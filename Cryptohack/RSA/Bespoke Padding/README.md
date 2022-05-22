@@ -13,6 +13,12 @@ Enc1: (a1*m+b1)^e = c1
 
 Enc2: (a2*m+b2)^e = c2
 
+This looks very vunerable to the Franklin-Reiter related message attack, an attack on rsa where we have two messages of the form:
+
+m2 = f(m1)
+
+f(x) = ax+b
+
 ```py
 def compositeModulusGCD(a, b):
     if(b == 0):
