@@ -35,9 +35,9 @@ def main():
 		pr(border, f'p = {p}')
 		pr(border, f'g = {g}')
 		pr(border, 'Send the solution x = ')
-		# ans = sc()
+		ans = sc()
 		try:
-			x = 1-p
+			x = int(ans)
 		except:
 			die(border, 'Given number is not integer!')
 		if x >= p:
